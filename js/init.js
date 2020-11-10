@@ -60,7 +60,6 @@ function setearUsuario() {
   if(usuario) {
     spanUser.innerHTML = usuario;
   }
-  
 }
 
 

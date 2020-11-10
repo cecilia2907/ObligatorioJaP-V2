@@ -63,7 +63,6 @@
   <main role="main" class="pb-5">
     <div class="text-center p-4">
       <h2>Carrito de compras</h2>
-      
     </div>
     <div class="container">
       <section>
@@ -82,7 +81,7 @@
                 <table class="table mb-3">
                   <thead>
                     <tr>
-                      <th scope="col"></th>
+                      <th scope="col" ></th>
                       <th scope="col">Nombre</th>
                       <th scope="col">Costo</th>
                       <th scope="col">Cantidad</th>
@@ -131,8 +130,6 @@
                     </div>
                   </div>
                 </form>
-                
-
               </div>
             </div>
 
@@ -151,9 +148,7 @@
 
                   <div class="col-8">
                     <span class="text-primary" id="metodoDePago">Aún no has seleccionado método de pago</span>
-
                   </div>
-
                 </div>
 
                 <!--Modal-->
@@ -163,11 +158,7 @@
                       <div class="modal-header">
 
                         <h5>Selecciona y completa el método de pago</h5> 
-                        <!-- Tabs con método de pago
-                        <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-6">
-                          <li class="nav-item"> <a data-toggle="pill" href="#credit-card" class="nav-link active "> <i class="fas fa-credit-card mr-2"></i> Tarjeta de crédito </a> </li>
-                          <li class="nav-item"> <a data-toggle="pill" href="#net-banking" class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> Transferencia bancaria </a> </li>
-                        </ul>-->
+                        
                       </div>
 
                       <div class="modal-body">
@@ -245,123 +236,22 @@
                               <label for="accountNumber">
                                 <h6>Número de cuenta</h6>
                               </label>
-                              <input type="text" name="accountNumber" placeholder="Ingrese el número de su cuenta" class="form-control " required>
-                                  
+                              <input type="text" name="accountNumber" placeholder="Ingrese el número de su cuenta" class="form-control " required>                     
                             </div>
-
-                          </div>
-
-                
-                          
+                          </div> 
                         </form>
-
-
-                        <!---<div class="tab-content">
-                          
-                          credit card info
-                          <div id="credit-card" class="tab-pane fade show active pt-2">
-                            <form role="form" id="formTarjeta">
-                              <div class="form-group"> 
-                                <label for="username">
-                                  <h6>Nombre del titular</h6>
-                                </label> 
-                                <input type="text" name="username" placeholder="Ingrese el nombre del titular de la tarjeta" class="form-control" required > 
-                              </div>
-
-                              <div class="form-group"> 
-                                <label for="cardNumber">
-                                  <h6>Número de la tarjeta</h6>
-                                </label>
-                                <input type="text" name="cardNumber" placeholder="Ingrese el número de su tarjeta" class="form-control " required>
-                                    
-                              </div>
-
-                              <div class="row">
-                                <div class="col-sm-8">
-                                  <div class="form-group"> 
-                                    <label>
-                                      <span class="hidden-xs">
-                                        <h6>Fecha de Vencimiento</h6>
-                                      </span>
-                                    </label>
-                                    <div class="input-group"> 
-                                      <input type="number" placeholder="MM" name="" class="form-control" required> 
-                                      <input type="number" placeholder="YY" name="" class="form-control" required> 
-                                    </div>
-                                  </div>
-                                </div>
-                                  
-                                <div class="col-sm-4">
-                                  <div class="form-group mb-4"> 
-                                    <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
-                                      <h6>CVV <i class="fa fa-question-circle d-inline"></i></h6>
-                                    </label> 
-                                    <input type="text" required class="form-control">
-                                  </div> 
-                                </div>
-                                    
-                                  
-                              </div>
-
-                              <button type="submit" class="btn btn-secondary btn-block shadow-sm" id="botonTarjeta" data-dismiss="modal"> Guardar datos </button>
-
-                              
-
-                            </form>
-                          </div>
-
-                          bank account info
-                          <div id="net-banking" class="tab-pane fade pt-3">
-                            <form role="form">
-                              <div class="form-group"> 
-                                <label for="Select Your Bank">
-                                  <h6>Select your Bank</h6>
-                                </label> 
-                                <select class="form-control" id="ccmonth" required>
-                                  <option value="" selected disabled>--Please select your Bank--</option>
-                                  <option>Bank 1</option>
-                                  <option>Bank 2</option>
-                                  <option>Bank 3</option>
-                                  <option>Bank 4</option>     
-                                </select> 
-                              </div>
-
-                              <button data-dismiss="modal" type="button" class="btn btn-secondary btn-block shadow-sm" type="submit" id="botonTransferencia"> Guardar </button>
-
-                            
-
-                            </form>
-
-                          </div>
-                          
-                        </div>-->
-
-
                       </div>
 
                       <div class="modal-footer">
-
                         <button type="button" class="btn btn-primary" id="botonMetodoPago" > Guardar datos </button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
                       </div>
-
                     </div>
                   </div>
                 </div>
-
-
-              
-
-
-
               </div>
-            </div>
-
-            
+            </div>           
           </div>
-          
-
 
           <!--Grid column-->
           <div class="col-4">
@@ -405,10 +295,7 @@
   
                 <button id="finalizarCompra" type="button" class="btn btn-primary btn-block">Finalizar compra</button>
 
-                <span id="alertaAca">
-                  
-
-                </span>
+                <span id="alertaAca"></span>
                   
   
               </div>

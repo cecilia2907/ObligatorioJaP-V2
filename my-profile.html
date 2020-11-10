@@ -41,7 +41,8 @@
       <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
       <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
       <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
           Bienvenid@
           <span id="user"></span>
         </button>
@@ -51,14 +52,141 @@
       </div>
     </div>
   </nav>
-  <div class="container p-5">
-    <div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
-      <h4 class="alert-heading">¡A trabajar! :)</h4>
-      <p>Esta sección corresponde a: Entrega 7 (Fecha de entrega: 8/11/202020) -> Punto 1 y 2.</p>
+  <main role="main" class="pb-5">
+
+    <div class="text-center p-4">
+      <h2>Mi perfil</h2>
       <hr>
-      <p class="mb-0">Para saber qué debes hacer, fijate en la actividad en CREA correspondiente a esta entrega.</p>
     </div>
-  </div>
+
+    <div class="container">
+
+      <div class="card">
+
+        <div class="card-body">
+
+          <div class="row">
+
+            <div class="col-md-4 text-center">
+
+              <img id="fotoPerfil" src="img/Foto de Perfil.png" class="rounded" width="200" height="200" alt="Foto de Perfil">
+              
+            </div>
+
+            <div class="col-md-8">
+
+              <div id="miPerfil" class="form-group">
+
+                <div class="form-row">
+                  <div class="form-group col-md-8 col-sm-12">
+                    <div class="font-weight-bold">Nombre</div>
+                    <hr>
+                    <div id="nombre" ></div>
+                  </div>
+                  <div class="form-group col-md-4 col-sm-12">
+                    <div class="font-weight-bold">Edad</div>
+                    <hr>
+                    <div id="edad" ></div>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6 col-sm-12">
+                    <div class="font-weight-bold">Email</div>
+                    <hr>
+                    <div id="email" ></div>
+                  </div>
+
+                  <div class="form-group col-md-6 col-sm-12">
+                    <div class="font-weight-bold">Teléfono</div>
+                    <hr>
+                    <div id="telefono" ></div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="form-row justify-content-end">
+
+            <button id="editarPerfil" class="btn btn-primary" type="button"  >Editar perfil</button>
+            <span id="errorEditar"></span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!--Modal-->
+
+      <div class="modal fade" id="perfilModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5>Edita tu perfil</h5>
+              <button id="perfilCerrar" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+
+              <form id="formPerfil" class="form-group">
+                <div class="form-row">
+                  <div class="form-group col-md-8 col-sm-12">
+                    <label for="nombres">Nombre:</label>
+                    <input id="inputNombre" class="form-control" type="text" placeholder="Ingresa tu nombre completo" name="nombre">
+                  </div>
+                  <div class="form-group col-md-4 col-sm-12">
+                    <label for="edad">Edad:</label>
+                    <input id="inputEdad" class="form-control" type="text"placeholder="Ingresa tu edad"
+                      name="edad">
+                  </div>
+                </div>
+            
+                <div class="form-row">
+                  <div class="form-group col-md-6 col-sm-12">
+                    <label for="email">Email:</label>
+                    <input id="inputEmail" class="form-control" type="text"placeholder="Ingresa tu email"
+                      name="email">
+                  </div>
+            
+                  <div class="form-group col-md-6 col-sm-12">
+                    <label for="telefono">Teléfono:</label>
+                    <input id="inputTel" class="form-control" type="text"
+                      placeholder="Ingresa tu teléfono" name="telefono">
+                  </div>          
+                </div>
+              </form>
+
+              <div class="form-group form-row">
+                <div class="form-group col-md-12 col-sm-12">
+                  <label for="inputFoto">Sube tu imagen:</label>
+                  <input id="inputFoto" class="form-control" type="text" placeholder="Copia la URL de tu imagen"
+                    name="inputFoto">
+                </div>
+              </div>
+
+              <div class="form-row justify-content-end">
+                <button id="guardarPerfil" class="btn btn-primary" type="button" >Guardar</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>  
+        
+
+
+  </main>
+
   <footer class="text-muted bg-light">
     <div class="container">
       <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
